@@ -1,7 +1,7 @@
 #!/bin/sh
 
 mkdir target
-rm /target/*
+rm ./target/*
 
 # build wasm-faas
 (cd wasm-faas; cargo build --release)
@@ -16,3 +16,6 @@ cp examples/option-pricing-as/build/option-pricing.wasm ./target
 
 (cd examples/sudoku-rs; cargo build --release --target wasm32-wasi)
 cp examples/sudoku-rs/target/wasm32-wasi/release/sudoku-rs.wasm ./target
+
+(cd examples/hello-rust; cargo build --release --target wasm32-wasi)
+cp examples/hello-rust/target/wasm32-wasi/release/hello-rust.wasm ./target

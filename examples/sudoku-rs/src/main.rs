@@ -2,6 +2,7 @@ use sudoku::Sudoku;
 
 fn main() {
     let puzzle_line = std::env::var("puzzle").unwrap();
+    println!("{puzzle_line}");
     let sudoku = Sudoku::from_str_line(&puzzle_line).unwrap();
     if let Some(solution) = sudoku.solve_unique() {
         let str = solution.to_str_line().to_string();

@@ -58,6 +58,7 @@ async fn handler(module_name: Path<String>, query: Query<HashMap<String, String>
 
 #[actix_web::main]
 async fn main() -> io::Result<()> {
+    println!("Listen at 127.0.0.1:8080");
     HttpServer::new(|| {
             App::new().service(handler)
         })
