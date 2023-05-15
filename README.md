@@ -9,6 +9,9 @@ Copyright 2022 Colin Eberhardt, MIT licence.
 
 ## todo
 
+* [ ] Change the `runtime` to `WasmEdge` instead of `WasmRuntime`
 * [ ] Figure out how to build `js` to wasm.
 * [ ] Can we compile the server to wasm?
 * [ ] Return valid information for invalid input.
+
+

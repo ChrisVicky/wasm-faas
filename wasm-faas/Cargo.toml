@@ -11,3 +11,4 @@ anyhow = "1.0"
 wasmtime = "0.35.1"
 wasmtime-wasi = "0.35.2"
 wasi-common = "0.35.2"
+wasmedge-sdk = {version = "0.8", features = ["wasi_nn"]}
